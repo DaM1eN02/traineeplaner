@@ -1,3 +1,9 @@
+body {
+    background-image: url("pictures/background.png");
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .center {
     text-align: center;
 }
@@ -13,4 +19,10 @@ label {
 
 textarea {
     resize: none;
+}
+
+#login {
+    width: 150px;
+    height: 50px;
+    font-size: 40px;
 }
