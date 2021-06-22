@@ -8,8 +8,14 @@ function login() {
 
     clear(document.getElementById("username"));
     clear(document.getElementById("password"));
+
+    load_planer();
 }
 
 function clear(target) {
     target.value = "";
+}
+
+function load_planer() {
+    window.location.href = "planer.html";
 }
