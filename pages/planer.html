@@ -9,23 +9,95 @@
 <body>
 <header>
     <div class="options">
-        <svg class="button" fill="currentColor" height="30" onclick="options()" viewBox="0 0 16 16" width="30">
+        <svg class="button" onclick="options()" fill="currentColor" height="30" viewBox="0 0 16 16" width="30">
             <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
         </svg>
 
-        <div class="optionsPop">
-            <ul id="list">
-                <li> <img src="../pictures/add.jpg" height="50" width="50" alt="Add"> </li>
-                <li>Edit</li>
-                <li>Remove</li>
-                <li>Config</li>
-            </ul>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times</span>
+                <ul id="list">
+                    <li> <img src="../pictures/add.jpg" height="56.25" width="70" alt="Add"> </li>
+                    <li>Edit</li>
+                    <li>Remove</li>
+                    <li>Config</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="searchBar">
-        <input id="search" type="search" title="Search Bar">
+        <input id="search" type="search" title="Search Bar" readonly="readonly" value="In work">  <!--TODO-->
     </div>
 </header>
+<br>
+<main>
+    <table id="table">
+        <tr class="row" id="row00">
+            <th class="column01">
+                <div>
+                    Datum
+                </div>
+            </th>
+            <th class="column02">
+                <div>
+                    Day 1
+                </div>
+            </th>
+            <th class="column03">
+                <div>
+                    Day 2
+                </div>
+            </th>
+            <th class="column04">
+                <div>
+                    Day 3
+                </div>
+            </th>
+            <th class="column05">
+                <div>
+                    Day 4
+                </div>
+            </th>
+            <th class="column06">
+                <div>
+                    Day 5
+                </div>
+            </th>
+        </tr>
+        <tr class="row" id="row01">
+            <td class="column01">
+                <div class="azubiList" id="azubi001">
+                    Azubi1
+                </div>
+            </td>
+            <td class="column02">
+                <div class="day1" id="day1001">
+                    Azubi1-Day1
+                </div>
+            </td>
+            <td class="column03">
+                <div class="day2" id="day2001">
+                    Azubi1-Day2
+                </div>
+            </td>
+            <td class="column04">
+                <div class="day3" id="day3001">
+                    Azubi1-Day3
+                </div>
+            </td>
+            <td class="column05">
+                <div class="day4" id="day4001">
+                    Azubi1-Day4
+                </div>
+            </td>
+            <td class="column06">
+                <div class="day5" id="day5001">
+                    Azubi1-Day5
+                </div>
+            </td>
+        </tr>
+    </table>
+</main>
 </body>
 </html>
