@@ -45,6 +45,7 @@
     width: 400px;
     height: auto;
     padding: 0;
+    background-color: white ;
 }
 
 .close {
@@ -61,10 +62,12 @@
     cursor: pointer;
 }
 
-th {
+.field {
+    height: 50px;
+    width: 240px;
     border: 1px solid;
 }
 
-td {
-    border: 1px solid;
+.space {
+    color: white;
 }
